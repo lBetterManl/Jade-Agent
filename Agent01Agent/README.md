@@ -4,7 +4,7 @@
 
 >配置jade环境变量（`jade.jar`   `commons-codec-1.3.jar`）
 新建`JADE_HOME`  值为文件夹路径
-`CALSSPATH`配置    `%JADE_HOME%\jade.jar`   `%JADE_HOME%\commons-codec-1.3.jar`
+`CLASSPATH`配置    `%JADE_HOME%\jade.jar`   `%JADE_HOME%\commons-codec-1.3.jar`
 
 检查安装   运行 `java jade.Boot -gui` 弹出窗口就成功
 
