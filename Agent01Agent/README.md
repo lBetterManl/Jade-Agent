@@ -9,7 +9,7 @@
 检查安装   运行 `java jade.Boot -gui` 弹出窗口就成功
 
 ###MyEclipse运行
->右键项目》 run as》Run Configuration》java application》Main class（jade.Boot)》Arguments(-gui hello:my.first.FirstAgent)
+>右键项目》 run as》Run Configuration》java application》Main class（jade.Boot)》Arguments(-gui hello:com.demo.AgentWorld)
 
 #此项目新建一个Agent
 
