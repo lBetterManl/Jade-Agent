@@ -1,5 +1,6 @@
 
 ## 远程计算机上Agent间的通信
+
 步骤：  
 1.弄清Agent的名称和地址  
 2.在两台机器上分别编写任意简单的Agent程序并运行  
@@ -10,12 +11,14 @@
 例子： NAME:ams@YHC-PC:1099/JADE  Address:http://YHC-PC:7778/acc  
 
 #### 构造方法设置接收方
+
 AID dest = new AID("hy@YHC-PC:1099/JADE");
 dest.addAddress("http://YHC-PC:7778/acc");
 
-`com.example1`	一个完整的远程发送方  
+`com.example1`一个完整的远程发送方  
 
-`com.example2`	给远程机器上所有Agent发送消息  
+`com.example2`给远程机器上所有Agent发送消息  
+
 说明：  
 1.AMSAgentDescription类
 	使用该类获取 AMS 上所有 Agent 的列表，常用方法是 getName()  
@@ -23,9 +26,11 @@ dest.addAddress("http://YHC-PC:7778/acc");
 	用来设置约束条件，如 setMaxResults() 设置查询的最大结果集  
 3.AMSService类  
 	负责对 agent 中的管理，如使用该类的 search() 方法搜索 AMS 中的所有 Agent
+	
 ---
  
 ## 基于对象序列化机制的 Agent 间的通信
+
 > Agent间发送的消息从形式上说可以分为三类：  
 1.原子消息：指以字符串形式发送的简单消息；  
 2.Java对象：如包含图书信息的Book类；  
@@ -46,6 +51,8 @@ Ontology对象| extractContent()   | fillContent()
 3.消息管理控制平台 ` MyMainControl `  
 
 ---
+
 ## 消息模板  
+
 MessageTemplate类用于过滤消息，设置消息的的通信行为，消息接收者等。  
 ` com.example4 ` A1,A2接收来自T1de消息，并回复消息；但T1只接收来自A1的消息。
