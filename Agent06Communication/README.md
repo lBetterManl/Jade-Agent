@@ -1,15 +1,15 @@
-[TOC]
-##远程计算机上Agent间的通信
+
+## 远程计算机上Agent间的通信
 步骤：  
 1.弄清Agent的名称和地址  
 2.在两台机器上分别编写任意简单的Agent程序并运行  
 3.在发送方Agent的运行平台(AgentPlatform)上添加与它通信的远端Agent(接收方)的平台  
 操作如下：  
 1.右键单击AgentPlatforms,在弹出的菜单上选中“Add Platform via AMS AID”;  
-2.在弹出的对话窗口中填写NAME和Address。  
-例子： NAME:ams@YHC-PC:1099/JADE  Address:http://YHC-PC:7778/acc  
+2.在弹出的对话窗口中填写NAME和Address。（这里有坑！将鼠标移到Address下的方框上右键添加）
+例子： NAME:ams@YHC-PC:1099/JADE  Address:http://YHC-PC:7778/acc  
 
-####构造方法设置接收方
+#### 构造方法设置接收方
 AID dest = new AID("hy@YHC-PC:1099/JADE");
 dest.addAddress("http://YHC-PC:7778/acc");
 
@@ -25,7 +25,7 @@ dest.addAddress("http://YHC-PC:7778/acc");
 	负责对 agent 中的管理，如使用该类的 search() 方法搜索 AMS 中的所有 Agent
 ---
  
-##基于对象序列化机制的 Agent 间的通信
+## 基于对象序列化机制的 Agent 间的通信
 > Agent间发送的消息从形式上说可以分为三类：  
 1.原子消息：指以字符串形式发送的简单消息；  
 2.Java对象：如包含图书信息的Book类；  
@@ -46,6 +46,6 @@ Ontology对象| extractContent()   | fillContent()
 3.消息管理控制平台 ` MyMainControl `  
 
 ---
-##消息模板  
+## 消息模板  
 MessageTemplate类用于过滤消息，设置消息的的通信行为，消息接收者等。  
 ` com.example4 ` A1,A2接收来自T1de消息，并回复消息；但T1只接收来自A1的消息。
