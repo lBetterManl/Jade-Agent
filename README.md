@@ -13,5 +13,5 @@ Jade 4.4.0
 
 ## 备注：
 
-`Developing-Multi-Agent-Systems-with-JADE`(已上传)是Jade官网推荐的书籍 
+`Developing-Multi-Agent-Systems-with-JADE`(已上传)是Jade官网推荐的书籍  
 [http://cloud.hbut.edu.cn](http://cloud.hbut.edu.cn)里面有多代理系统应用在医疗方向的论文  
